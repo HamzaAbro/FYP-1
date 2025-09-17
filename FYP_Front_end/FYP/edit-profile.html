@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Profile</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- Custom Theme -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="dynamic-navbar">
+    <div class="d-flex align-items-center">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="about.html">About Us</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+      <a class="nav-link" href="faq.html">FAQs</a>
+    </div>
+    <div class="auth-links d-flex align-items-center">
+      <a href="index.html" class="join-btn">Logout</a>
+    </div>
+  </div>
+
+  <!-- Edit Profile Section -->
+  <div class="container-fluid my-4">
+    <div class="row">
+      <!-- Sidebar -->
+      <div class="col-md-3">
+        <div class="sidebar">
+            <a href="profile.html">Home</a>
+          <a href="edit-profile.html" class="active">Manage Profile</a>
+          <a href="history.html">View Scanned History</a>
+          <a href="index.html">Logout</a>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+      <!-- Content Area -->
+      <div class="col-md-7">
+        <div class="phishing-box p-4">
+          <h2 class="mb-4">Edit Profile</h2>
+
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Full Name</label>
+              <input type="text" class="form-control" value="John Doe">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" value="johndoe@email.com">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Password</label>
+              <input type="password" class="form-control" placeholder="Enter new password (optional)">
+            </div>
+
+            <!-- <button type="submit" class="btn btn-analyze mt-2">Save Changes</button> -->
+            <button type="button" class="btn btn-analyze mt-2" onclick="window.location.href='profile.html'">Save Changes</button>
+            <button type="button" class="btn btn-analyze mt-2" onclick="window.location.href='profile.html'">Return to Profile</button>
+
+            <!-- <a href="profile.html" class="btn btn-secondary mt-2 ms-2">Return to Profile</a> -->
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>

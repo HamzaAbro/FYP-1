@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Superpower</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body class="login_body">
+    <div class="dynamic-navbar">
+    <!-- Left Nav -->
+        <div class="d-flex align-items-center">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="about.html">About Us</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="faq.html">FAQs</a>
+        </div>
+
+
+    <!-- Right Nav -->
+        <div class="auth-links d-flex align-items-center">
+            <a href="login.html" class="join-btn active">Sign In</a>
+            <a href="register.html" class="join-btn">Sign Up</a>
+        </div>
+    </div>
+
+  <div class="container">
+    <div class="login-container">
+      <h2>Login</h2>
+      <form>
+        <div class="mb-3">
+          <input type="email" class="form-control" placeholder="Email Address" required>
+        </div>
+        <div class="mb-3">
+          <input type="password" class="form-control" placeholder="Password" required>
+        </div>
+        <button type="button" class="btn-login" onclick="window.location.href='profile.html'">Login</button>
+
+
+        <!-- <button type="submit" class="btn-login">Login</button> -->
+      </form>
+      <div class="extra-links">
+        <p><a href="forget-password.html">Forgot Password?</a></p>
+        <p>Don’t have an account? <a href="register.html">Sign Up</a></p>
+      </div>
+    </div>
+  </div>
+
+</body>
+<!-- JS -->
+<script src="js/script.js"></script>
+</html>
